@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --background: white;
+    --text-color:black;
+    --border-img:2px solid rgb(146, 141, 141);
+
+}
+
+.dark{
+    --background: black;
+    --text-color:white;
+    --border-img:2px solid rgb(111, 107, 107);
+}
+
+.gatoFeliz{
+    background-image: url(./img/gato-feliz.jpg);
+}
+
+.gatoTriste{
+    background-image: url(./img/gato-triste.jpg);
+}
+
+body{
+    font-size: 1.6rem;
+
+    font-family: "Open Sans", sans-serif;   
+}
+main, aside{
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+header{
+    background-color: #256d85;
+    padding: 1.2rem 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 32rem;
+
+}
+
+header #meuAvatar{
+    width: 4.5rem;
+}
+
+header input{
+    height: 4rem;
+    min-width: 16rem ;
+    
+    border: none;
+    border-radius: .4rem;
+
+    background-color: #438da6;
+    color: white;
+}
+
+#pata:hover{
+
+    background-color: #323536;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 50%;
+}
+
+::placeholder{
+    color: white;
+}
+
+main{
+    padding: 2rem 2.8rem 1rem 1.8rem;
+    text-align: justify;
+}
+main h1{
+
+    font-size: 2rem;
+    text-align: center;
+}
+main p{
+   margin-top: 1.6rem;
+}
+
+#inicial-cat{
+
+    min-width: 32rem;
+    width: 100%;
+}
+
+
+.likeBox{
+    
+    margin: 1.4rem auto 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.like, .deslike{
+
+    background-color: #256d85;
+    color: white;
+  
+    border-radius: 50%;
+    padding: 1rem 1rem .6rem;
+  
+}
+
+aside{
+    padding: 2.2rem 3rem 1.8rem 2rem;
+}
+
+aside h1{
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+aside figure figcaption{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+aside figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2.5rem;
+}
+
+aside figure img{
+ width: 10rem;
+ height: 10rem;
+
+ border-radius: 6px;
+
+ border: var(--border-img);
+ 
+}
+.figBox{
+
+    padding: .4rem;
+    text-align: left;
+}
+
+footer{
+    background-color: #256d85;
+    color:  white;
+
+    padding: 1.8rem;
+
+    min-width: 32rem;
+
+    text-align: center;
+}
+
+@media(min-width:700px){
+
+#pata{
+
+ margin-left: 10rem;
+ margin-right: -10rem;
+    
+}
+#meuAvatar{
+    margin-right: 10rem;
+    margin-left: -10rem;
+}
+header input{
+ width: 60%;
+}
+
+#container{
+background-color: var(--background);
+ display: flex;  
+ padding: 4rem 4rem 4rem 8rem;
+}
+main h1{
+    font-size: 3.6rem;
+}
+
+#container img{
+    border-radius: 6px;
+}
+
+#container aside{
+
+    padding: 0 3rem;
+    
+}
+figure p{
+   font-size: 1.2rem;
+   text-align: justify;
+}
+
+
+}
